@@ -1,6 +1,6 @@
 {
   "name": "react-scripts-monaco",
-  "version": "3.0.1m",
+  "version": "3.0.1m3",
   "description": "Configuration and scripts for Create React App.",
   "repository": {
     "type": "git",
@@ -59,6 +59,8 @@
     "jest-environment-jsdom-fourteen": "0.1.0",
     "jest-resolve": "24.7.1",
     "jest-watch-typeahead": "0.3.0",
+    "monaco-editor-webpack-plugin": "^1.7.0",
+    "monaco-editor": "^0.17.1",
     "mini-css-extract-plugin": "0.5.0",
     "optimize-css-assets-webpack-plugin": "5.0.1",
     "pnp-webpack-plugin": "1.2.1",
