@@ -1,6 +1,6 @@
 {
-  "name": "eslint-config-react-app",
-  "version": "4.0.1",
+  "name": "eslint-config-react-app-monaco",
+  "version": "4.0.1-m",
   "description": "ESLint configuration used by Create React App",
   "repository": {
     "type": "git",
