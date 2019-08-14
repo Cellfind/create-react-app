@@ -43,8 +43,8 @@ const appPackageJson = require(paths.appPackageJson);
 
 // Monaco Plugin
 const MonacoWebpackPlugin = require('monaco-editor-webpack-plugin');
-const APP_DIR = path.resolve(__dirname, './src');
-const MONACO_DIR = path.resolve(__dirname, './node_modules/monaco-editor');
+// const APP_DIR = path.resolve(__dirname, './src');
+// const MONACO_DIR = path.resolve(__dirname, './node_modules/monaco-editor');
 //
 
 
@@ -493,7 +493,6 @@ module.exports = function(webpackEnv) {
             // By default we support CSS Modules with the extension .module.css
             {
               test: cssRegex,
-              include: APP_DIR,
               exclude: cssModuleRegex,
               use: getStyleLoaders({
                 importLoaders: 1,
@@ -504,11 +503,6 @@ module.exports = function(webpackEnv) {
               // Remove this when webpack adds a warning or an error for this.
               // See https://github.com/webpack/webpack/issues/6571
               sideEffects: true,
-            },
-            {
-              test: /\.css$/,
-              include: MONACO_DIR,
-              use: ['style-loader', 'css-loader'],
             },
             // Adds support for CSS Modules (https://github.com/css-modules/css-modules)
             // using the extension .module.css
